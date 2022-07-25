@@ -13,6 +13,9 @@ GameObject:
   - component: {fileID: 2300000}
   - component: {fileID: 13500000}
   - component: {fileID: 5492404}
+  - component: {fileID: 366504624}
+  - component: {fileID: 366504625}
+  - component: {fileID: 366504626}
   m_Layer: 0
   m_Name: Cue Ball
   m_TagString: Untagged
@@ -105,10 +108,54 @@ Rigidbody:
   m_GameObject: {fileID: 100000}
   serializedVersion: 2
   m_Mass: 0.285
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Drag: 0.8
+  m_AngularDrag: 0.8
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 2
+--- !u!114 &366504624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e2f18b00b6365458d8c9ef00f0fefe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _forceValue: 4
+  _kickButton: {fileID: 0}
+  _trajectory: {fileID: 0}
+--- !u!114 &366504625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f7578d952fa1f344b4d72cc4463ac64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _circleIcon: {fileID: 0}
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 72
+  _lineRenderer: {fileID: 0}
+--- !u!114 &366504626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11ab3560078b41146939bb97fce20aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
